@@ -39,13 +39,13 @@ window.addEventListener("scroll", function() {
     <div class="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
         <img src="{{ asset('image/logo.jpeg') }}" class="h-12">
         <ul class="flex gap-10 font-medium">
-    <li><a href="#" class="text-emerald-400 relative">
-    Beranda
+    <li><a href="/home" class="text-emerald-400 relative">
+    Home
     <span class="absolute left-0 -bottom-2 w-full h-[2px] bg-emerald-400"></span>
 </a></li>
-    <li><a href="#" class="nav-link">Tentang</a></li>
-    <li><a href="#" class="nav-link">Produk</a></li>
-    <li><a href="#" class="nav-link">Kontak</a></li>
+    <li><a href="/about" class="nav-link">About Us</a></li>
+    <li><a href="/products" class="nav-link">Products</a></li>
+    <li><a href="/contact" class="nav-link">Contact</a></li>
 </ul>
         <a href="#"
             class="bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-3 rounded-2xl font-semibold">
@@ -232,8 +232,9 @@ window.addEventListener("scroll", function() {
                 </h3>
 
                 <ul class="space-y-3 text-slate-400">
-                    <li>📍 Tangerang, Indonesia</li>
-                    <li>📞 +62 812 3456 7890</li>
+                    <li>📍 Jl. Faliman Jaya, RT.001/RW.009, Kb. Besar, Kec. Benda, Kota Tangerang, Banten 15124</li>
+                    <li>📞 +62 852-1294-0295</li>
+                    <li>📞 +62 813-1708-9841 (No. CS)</li>
                     <li>✉️ sales@zippercompany.com</li>
                 </ul>
             </div>
@@ -261,10 +262,7 @@ window.addEventListener("scroll", function() {
                         <i class="fab fa-tiktok"></i>
                     </a>
 
-                    <a href="#"
-                        class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center hover:bg-emerald-400 transition">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
+                    
 
                 </div>
             </div>
