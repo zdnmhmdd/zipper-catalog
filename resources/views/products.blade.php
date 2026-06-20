@@ -58,158 +58,132 @@ window.addEventListener("scroll", function() {
 {{-- CONTACT SECTION --}}
 
 
-<section class="py-10 pt-30">
+<section class="pb-24 pt-30">
+
     <div class="max-w-7xl mx-auto px-8">
 
-        <h2 class="text-2xl font-semibold text-center mb-8">
-            Kategori
-        </h2>
+        <div class="text-center mb-14">
+            <h2 class="text-5xl font-bold mt-4 text-slate-900">
+                Zipper Solutions for Every Industry
+            </h2>
+            <p class="text-gray-500 mt-4 max-w-2xl mx-auto leading-8">
+                High-quality zipper products designed for durability,
+                performance, and reliability across a wide range of
+                applications.
+            </p>
+        </div>
 
-        <div class="flex justify-center items-center gap-4 mt-6">
-            <button class="bg-emerald-400 text-white px-8 py-1 rounded-xl font-medium">
+        <div class="flex justify-center gap-4 flex-wrap mb-14">
+            <button class="px-6 py-2 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
                 ZIPPERS
             </button>
-
-            <button class="bg-white border border-gray-300 px-8 py-1 rounded-xl
-                    hover:bg-emerald-500 hover:text-white hover:border-emerald-500
-                    transition-all duration-300">
-                 SLIDERS
+            <button class="px-6 py-2 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
+                SLIDERS
             </button>
-
-            <button class="bg-white border border-gray-300 px-8 py-1 rounded-xl
-                    hover:bg-emerald-500 hover:text-white hover:border-emerald-500
-                    transition-all duration-300">
-                 MAGIC TAPE
+            <button class="px-8 py-3 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
+                MAGIC TAPE
             </button>
-
-            <button class="bg-white border border-gray-300 px-8 py-1 rounded-xl
-                    hover:bg-emerald-500 hover:text-white hover:border-emerald-500
-                    transition-all duration-300">
-                 OTHERS
+            <button class="px-8 py-3 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
+                OTHERS
             </button>
+        </div>
 
-            
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; margin-top: 32px; width: 100%;">
 
+    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+        <div>
+            <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+                <img src="{{ asset('image/nylon.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="padding: 24px;">
+                <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">Zippers</span>
+                <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">Nylon Zipper</h3>
+                <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Strong and flexible zipper made from high-quality nylon material.</p>
+                <div style="margin-top: 20px;">
+                    <span style="font-weight: 600; color: #10b981;">Size</span>
+                    <span style="margin-left: 12px; color: #475569;">3, 5, 8, 10</span>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 24px; padding-top: 0;">
+            <a href="/products/nylon-zipper" style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none; transition: color 0.2s;">
+                View Details →
+            </a>
         </div>
     </div>
 
-</section>
-<section class="pb-24">
-    <div class="max-w-7xl mx-auto px-8">
-
-        <div class="grid md:grid-cols-4 xl:grid-cols-4 gap-8 mt-12">
-
-            <!-- Nylon -->
-            <div class="bg-white rounded-[60px] overflow-hidden border-2 border-gray-200 hover:shadow-xl transition-all duration-300">
-
-               <div class="bg-gray-50 h-[250px] flex items-center justify-center p-6">
-                    <img src="{{ asset('image/nylon.jpeg') }}"
-                        class="max-h-full max-w-full object-contain">
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-2xl font-semibold">
-                        Nylon Zipper
-                    </h3>
-
-                    <p class="text-gray-500 mt-2">
-                        Size: 3, 5, 8, 10
-                    </p>
-
-                    <a href="#"
-                        class="inline-block mt-6 bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-3 rounded-full transition">
-                        Read More..
-                    </a>
-
-                </div>
-
+    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+        <div>
+            <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+                <img src="{{ asset('image/hero.png') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             </div>
-
-            <!-- Resin -->
-            <div class="bg-white rounded-[60px] overflow-hidden border-2 border-gray-200 hover:shadow-xl transition-all duration-300">
-
-                <div class="bg-gray-50 h-[250px] flex items-center justify-center p-6">
-                    <img src="{{ asset('image/hero.png') }}"
-                        class="max-h-full max-w-full object-contain">
+            <div style="padding: 24px;">
+                <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">Zippers</span>
+                <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">Resin Zipper</h3>
+                <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Smooth and lightweight zipper with excellent color matching.</p>
+                <div style="margin-top: 20px;">
+                    <span style="font-weight: 600; color: #10b981;">Size</span>
+                    <span style="margin-left: 12px; color: #475569;">3, 5, 8, 10</span>
                 </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-2xl font-semibold">
-                        Resin Zipper
-                    </h3>
-
-                    <p class="text-gray-500 mt-2">
-                        Size: 3, 5, 8, 10
-                    </p>
-
-                    <a href="#"
-                        class="inline-block mt-6 bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-3 rounded-full transition">
-                        Read More..
-                    </a>
-
-                </div>
-
             </div>
-
-            <!-- Metal -->
-            <div class="bg-white rounded-[60px] overflow-hidden border-2 border-gray-200 hover:shadow-xl transition-all duration-300">
-
-                <div class="bg-gray-50 h-[250px] flex items-center justify-center p-6">
-                    <img src="{{ asset('image/metal.jpeg') }}"
-                        class="max-h-full max-w-full object-contain">
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-2xl font-semibold">
-                        Metal Zipper
-                    </h3>
-
-                    <p class="text-gray-500 mt-2">
-                        Size: 3, 5, 8
-                    </p>
-
-                    <a href="#"
-                        class="inline-block mt-6 bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-3 rounded-full transition">
-                        Read More..
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- Waterproof -->
-            <div class="bg-white rounded-[60px] overflow-hidden border-2 border-gray-200 hover:shadow-xl transition-all duration-300">
-
-                <div class="bg-gray-50 h-[250px] flex items-center justify-center p-6">
-                    <img src="{{ asset('image/waterproof.jpeg') }}"
-                        class="max-h-full max-w-full object-contain">
-                </div>
-
-                <div class="p-5">
-
-                    <h3 class="text-2xl font-semibold">
-                        Waterproof Zipper
-                    </h3>
-
-                    <p class="text-gray-500 mt-2">
-                        Size: 3, 5
-                    </p>
-
-                    <a href="#"
-                        class="inline-block mt-6 bg-emerald-400 hover:bg-emerald-500 text-white px-6 py-3 rounded-full transition">
-                        Read More..
-                    </a>
-
-                </div>
-
-            </div>
-
         </div>
+        <div style="padding: 24px; padding-top: 0;">
+            <a href="/products/resin-zipper" style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none; transition: color 0.2s;">
+                View Details →
+            </a>
+        </div>
+    </div>
+
+    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+        <div>
+            <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+                <img src="{{ asset('image/metal.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="padding: 24px;">
+                <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">Zippers</span>
+                <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">Metal Zipper</h3>
+                <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">Premium metal zipper for strong, durable and stylish finish.</p>
+                <div style="margin-top: 20px;">
+                    <span style="font-weight: 600; color: #10b981;">Size</span>
+                    <span style="margin-left: 12px; color: #475569;">3, 5, 8</span>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 24px; padding-top: 0;">
+            <a href="/products/metal-zipper" style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none; transition: color 0.2s;">
+                View Details →
+            </a>
+        </div>
+    </div>
+
+    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+        <div>
+            <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+                <img src="{{ asset('image/waterproof.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+            <div style="padding: 24px;">
+                <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">Zippers</span>
+                <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">Waterproof Zipper</h3>
+                <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                    Designed to resist water penetration for outdoor and technical gear.
+                </p>
+                <div style="margin-top: 20px;">
+                    <span style="font-weight: 600; color: #10b981;">Size</span>
+                    <span style="margin-left: 12px; color: #475569;">3, 5</span>
+                </div>
+            </div>
+        </div>
+        <div style="padding: 24px; padding-top: 0;">
+            <a href="/products/waterproof-zipper" style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none; transition: color 0.2s;">
+                View Details →
+            </a>
+        </div>
+    </div>
+
+</div>
 
     </div>
+
 </section>
 <footer class="bg-slate-900 text-white mt-5">
 
