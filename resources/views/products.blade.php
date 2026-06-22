@@ -13,6 +13,17 @@
         rel="stylesheet">
         <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+.filter-btn{
+    transition: all .3s ease;
+}
+
+.filter-btn.active{
+    background-color:#10b981 !important;
+    color:white !important;
+    border-color:#10b981 !important;
+}
+</style>
 </head>
 <script>
 window.addEventListener("scroll", function() {
@@ -74,23 +85,35 @@ window.addEventListener("scroll", function() {
         </div>
 
         <div class="flex justify-center gap-4 flex-wrap mb-14">
-            <button class="px-6 py-2 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
-                ZIPPERS
-            </button>
-            <button class="px-6 py-2 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
-                SLIDERS
-            </button>
-            <button class="px-8 py-3 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
-                MAGIC TAPE
-            </button>
-            <button class="px-8 py-3 border border-gray-300 rounded-full hover:bg-emerald-500 hover:text-white transition">
-                OTHERS
-            </button>
-        </div>
+
+   <button onclick="filterProducts('all', this)"
+        class="filter-btn active px-6 py-2 rounded-full border">
+    ALL
+</button>
+
+<button onclick="filterProducts('zippers', this)"
+        class="filter-btn px-6 py-2 rounded-full border">
+    ZIPPERS
+</button>
+
+    <button onclick="filterProducts('sliders', this)" class="filter-btn px-6 py-2 rounded-full border">
+    SLIDERS
+</button>
+
+    <button onclick="filterProducts('magic-tape', this)" class="filter-btn px-6 py-2 rounded-full border">
+    MAGIC TAPE
+</button>
+    <button onclick="filterProducts('others', this)" class="filter-btn px-6 py-2 rounded-full border">
+    OTHERS
+</button>
+
+</div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; margin-top: 32px; width: 100%;">
 
-    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div class="product-card"
+     data-category="zippers"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
         <div>
             <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
                 <img src="{{ asset('image/nylon.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -112,7 +135,9 @@ window.addEventListener("scroll", function() {
         </div>
     </div>
 
-    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div class="product-card"
+     data-category="zippers"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
         <div>
             <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
                 <img src="{{ asset('image/hero.png') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -134,7 +159,9 @@ window.addEventListener("scroll", function() {
         </div>
     </div>
 
-    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div class="product-card"
+     data-category="zippers"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
         <div>
             <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
                 <img src="{{ asset('image/metal.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -156,7 +183,9 @@ window.addEventListener("scroll", function() {
         </div>
     </div>
 
-    <div style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+    <div class="product-card"
+     data-category="zippers"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
         <div>
             <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
                 <img src="{{ asset('image/waterproof.jpeg') }}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -179,6 +208,92 @@ window.addEventListener("scroll", function() {
             </a>
         </div>
     </div>
+
+    <div class="product-card"
+     data-category="sliders"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+
+    <div>
+
+        <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+            <img src="{{ asset('image/auto-lock-slider.jpg') }}"
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div style="padding: 24px;">
+
+            <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">
+                Sliders
+            </span>
+
+            <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">
+                Auto Lock Slider
+            </h3>
+
+            <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                Secure locking slider designed to prevent accidental opening and ensure smooth operation.
+            </p>
+
+            <div style="margin-top: 20px;">
+                <span style="font-weight: 600; color: #10b981;">Size</span>
+                <span style="margin-left: 12px; color: #475569;">3, 5, 8, 10</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="padding: 24px; padding-top: 0;">
+        <a href="/products/auto-lock-slider"
+           style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none; transition: color 0.2s;">
+            View Details →
+        </a>
+    </div>
+
+</div>
+
+<div class="product-card"
+     data-category="magic-tape"
+     style="background-color: #ffffff; border-radius: 24px; border: 1px solid #e2e8f0; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+
+    <div>
+
+        <div style="width: 100%; height: 300px; overflow: hidden; position: relative;">
+            <img src="{{ asset('image/sew-on-magic-tape.png') }}"
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        </div>
+
+        <div style="padding: 24px;">
+
+            <span style="font-size: 12px; text-transform: uppercase; color: #10b981; font-weight: 600; letter-spacing: 0.05em; display: block;">
+                Magic Tape
+            </span>
+
+            <h3 style="font-size: 24px; font-weight: 700; margin-top: 12px; color: #0f172a;">
+                Sew-On Magic Tape
+            </h3>
+
+            <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                Durable sew-on hook and loop fastener suitable for garments, bags, and footwear applications.
+            </p>
+
+            <div style="margin-top: 20px;">
+                <span style="font-weight: 600; color: #10b981;">Width</span>
+                <span style="margin-left: 12px; color: #475569;">16mm - 100mm</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="padding: 24px; padding-top: 0;">
+        <a href="/products/sew-on-magic-tape"
+           style="display: inline-block; color: #10b981; font-weight: 600; text-decoration: none;">
+            View Details →
+        </a>
+    </div>
+
+</div>
 
 </div>
 
@@ -268,6 +383,28 @@ window.addEventListener("scroll", function() {
     </div>
 
 </footer>
+<script>
+function filterProducts(category, button){
+
+    // tombol aktif
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+
+    button.classList.add('active');
+
+    // filter
+    document.querySelectorAll('.product-card').forEach(card => {
+
+        if(category === 'all' || card.dataset.category === category){
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+
+    });
+}
+</script>
 </body>
 
 </html>

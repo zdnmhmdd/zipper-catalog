@@ -67,88 +67,111 @@ window.addEventListener("scroll", function() {
           <div class="lg:col-span-6 sticky top-36">
     <div style="background-color: #f3f3f3; border-radius: 32px; overflow: hidden; width: 100%; height: 450px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
         
-        <img src="{{ asset('image/nylon.jpeg') }}"
-             style="width: 100%; height: 100%; object-fit: cover; display: block; mix-blend-multiply: multiply;"
-             class="transition-transform duration-700 ease-out hover:scale-105">
+       <img src="{{ asset('image/sew-on-magic-tape.png') }}"
+     style="width: 100%; height: 100%; object-fit: cover; display: block;"
+     class="transition-transform duration-700 ease-out hover:scale-105">
+
              
     </div>
 </div>
 
             <!-- SISI KANAN: INFORMASI PRODUK (6 KOLOM) -->
-            <div class="lg:col-span-6 lg:py-4">
-                
-                <!-- Kategori Kecil bergaya Subtitle -->
-                <span class="text-xs font-bold tracking-[0.2em] text-emerald-500 uppercase block mb-3">
-                    Collection / Zippers
-                </span>
 
-                <!-- Nama Produk Bold Premium -->
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
-                    Nylon Zipper
-                </h1>
+<!-- KATEGORI -->
+<div class="lg:col-span-6 lg:py-4">
 
-                <!-- Deskripsi dengan Line Height yang Lega -->
-                <p class="text-slate-500 leading-relaxed text-base font-normal mb-10">
-                    Engineered for high-end textile solutions, our Nylon Zipper series delivers the ultimate balance of flexible movement and uncompromising structural integrity. Ideal for garments, heavy-duty bags, and technical gear.
-                </p>
+<!-- KATEGORI -->
+<span class="text-xs font-bold tracking-[0.2em] text-emerald-500 uppercase block mb-3">
+    Collection / Magic Tape
+</span>
 
-                <!-- TABEL SPESIFIKASI MINIMALIS ELEGAN -->
-                <div class="mb-10">
-                    <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-4">
-                        Technical Specifications
-                    </h3>
-                    <div class="border-t border-slate-200 text-sm">
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Material</span>
-                            <span class="text-slate-900 font-medium">Reinforced Nylon Fiber</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Available Gauge Sizes</span>
-                            <span class="text-slate-900 font-medium">No. 3, No. 5, No. 8, No. 10</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Color Options</span>
-                            <span class="text-slate-900 font-medium">Custom DTM (Dye-To-Match)</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Primary Application</span>
-                            <span class="text-slate-900 font-medium">Garments, Heavy Luggage, Tactical Shoes</span>
-                        </div>
-                    </div>
-                </div>
+<!-- NAMA PRODUK -->
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
+    Sew-On Magic Tape
+</h1>
 
-                <!-- SEKTOR FITUR (GRID MINIMALIS) -->
-    <div class="mb-5" style="display: block; width: 100%; box-sizing: border-box;">
-    <h3 class="text-xs font-bold tracking-[0.15em] text-slate-400 uppercase mb-5" style="display: block;">
-        Performance Benefits
+<!-- DESKRIPSI -->
+<p class="text-slate-500 leading-relaxed text-base font-normal mb-10">
+    Sew-On Magic Tape is a durable hook and loop fastening solution designed
+    for repeated use in garments, bags, footwear, medical equipment, and
+    industrial applications. Its strong adhesion and easy sewing installation
+    make it a reliable choice for products requiring secure yet flexible fastening.
+</p>
+
+<!-- TECHNICAL SPECIFICATIONS -->
+<div class="mb-10">
+
+    <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-4">
+        Technical Specifications
     </h3>
-    
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; box-sizing: border-box;">
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Snag-Free Smooth Glide</span>
+
+    <div class="border-t border-slate-200 text-sm">
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Material</span>
+            <span class="text-slate-900 font-medium">Nylon Hook & Loop</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">High Tensile Strength</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Available Width</span>
+            <span class="text-slate-900 font-medium">16mm - 100mm</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Lightweight & Flexible</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Color Options</span>
+            <span class="text-slate-900 font-medium">Black, White, Custom Colors</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Industrial Standards</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Primary Application</span>
+            <span class="text-slate-900 font-medium">Garments, Bags, Footwear, Medical Products</span>
         </div>
 
     </div>
+
 </div>
 
-                <!-- TOMBOL AKSI UTAMA (INTERAKTIF MAKSIMAL) -->
+<!-- PERFORMANCE BENEFITS -->
+<div class="mb-5">
+
+    <h3 class="text-xs font-bold tracking-[0.15em] text-slate-400 uppercase mb-5">
+        Performance Benefits
+    </h3>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Strong Hook & Loop Fastening
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Easy Sewing Installation
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Reusable Thousands of Times
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Durable Industrial Quality
+            </span>
+        </div>
+
+    </div>
+
+</div>
+             <!-- TOMBOL AKSI UTAMA (INTERAKTIF MAKSIMAL) -->
                 <div class="flex items-center gap-4 mb-16">
                     <!-- Tombol Utama Solid -->
                     <a href="https://wa.me/628xxxxxxxxxx"

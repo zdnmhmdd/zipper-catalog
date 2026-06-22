@@ -67,86 +67,109 @@ window.addEventListener("scroll", function() {
           <div class="lg:col-span-6 sticky top-36">
     <div style="background-color: #f3f3f3; border-radius: 32px; overflow: hidden; width: 100%; height: 450px; display: flex; align-items: center; justify-content: center; box-sizing: border-box;">
         
-        <img src="{{ asset('image/nylon.jpeg') }}"
+        <img src="{{ asset('image/metal.jpeg') }}"
              style="width: 100%; height: 100%; object-fit: cover; display: block; mix-blend-multiply: multiply;"
              class="transition-transform duration-700 ease-out hover:scale-105">
              
     </div>
 </div>
 
-            <!-- SISI KANAN: INFORMASI PRODUK (6 KOLOM) -->
-            <div class="lg:col-span-6 lg:py-4">
-                
-                <!-- Kategori Kecil bergaya Subtitle -->
-                <span class="text-xs font-bold tracking-[0.2em] text-emerald-500 uppercase block mb-3">
-                    Collection / Zippers
-                </span>
+<!-- SISI KANAN: INFORMASI PRODUK (6 KOLOM) -->
+<!-- Kategori -->
+<div class="lg:col-span-6 lg:py-4">
 
-                <!-- Nama Produk Bold Premium -->
-                <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
-                    Nylon Zipper
-                </h1>
+<span class="text-xs font-bold tracking-[0.2em] text-emerald-500 uppercase block mb-3">
+    Collection / Zippers
+</span>
 
-                <!-- Deskripsi dengan Line Height yang Lega -->
-                <p class="text-slate-500 leading-relaxed text-base font-normal mb-10">
-                    Engineered for high-end textile solutions, our Nylon Zipper series delivers the ultimate balance of flexible movement and uncompromising structural integrity. Ideal for garments, heavy-duty bags, and technical gear.
-                </p>
+<!-- Nama Produk -->
+<h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
+    Metal Zipper
+</h1>
 
-                <!-- TABEL SPESIFIKASI MINIMALIS ELEGAN -->
-                <div class="mb-10">
-                    <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-4">
-                        Technical Specifications
-                    </h3>
-                    <div class="border-t border-slate-200 text-sm">
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Material</span>
-                            <span class="text-slate-900 font-medium">Reinforced Nylon Fiber</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Available Gauge Sizes</span>
-                            <span class="text-slate-900 font-medium">No. 3, No. 5, No. 8, No. 10</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Color Options</span>
-                            <span class="text-slate-900 font-medium">Custom DTM (Dye-To-Match)</span>
-                        </div>
-                        <div class="flex justify-between py-4 border-b border-slate-100">
-                            <span class="text-slate-400">Primary Application</span>
-                            <span class="text-slate-900 font-medium">Garments, Heavy Luggage, Tactical Shoes</span>
-                        </div>
-                    </div>
-                </div>
+<!-- Deskripsi -->
+<p class="text-slate-500 leading-relaxed text-base font-normal mb-10">
+    Metal Zipper is engineered for premium applications requiring superior
+    strength, durability, and a sophisticated appearance. Featuring high-quality
+    metal teeth with excellent wear resistance, this zipper is widely used in
+    fashion garments, denim products, leather goods, handbags, and heavy-duty
+    luggage where both performance and aesthetics are essential.
+</p>
 
-                <!-- SEKTOR FITUR (GRID MINIMALIS) -->
-    <div class="mb-5" style="display: block; width: 100%; box-sizing: border-box;">
-    <h3 class="text-xs font-bold tracking-[0.15em] text-slate-400 uppercase mb-5" style="display: block;">
-        Performance Benefits
+<!-- Technical Specifications -->
+<div class="mb-10">
+
+    <h3 class="text-xs font-bold tracking-wider text-slate-400 uppercase mb-4">
+        Technical Specifications
     </h3>
-    
-    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; width: 100%; box-sizing: border-box;">
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Snag-Free Smooth Glide</span>
+
+    <div class="border-t border-slate-200 text-sm">
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Material</span>
+            <span class="text-slate-900 font-medium">Premium Metal Teeth</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">High Tensile Strength</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Available Sizes</span>
+            <span class="text-slate-900 font-medium">No. 3, No. 5, No. 8</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Lightweight & Flexible</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Finish Options</span>
+            <span class="text-slate-900 font-medium">Gold, Silver, Antique Brass, Gunmetal</span>
         </div>
-        
-        <div style="background-color: #ffffff; padding: 16px 20px; border-radius: 16px; border: 1px solid #f1f5f9; box-shadow: 0 2px 8px rgba(0,0,0,0.015); display: flex; align-items: center; gap: 12px; box-sizing: border-box; width: 100%; min-height: 56px;">
-            <span style="width: 8px; height: 8px; background-color: #34d399; border-radius: 50%; flex-shrink: 0; display: inline-block;"></span>
-            <span style="font-size: 14px; font-weight: 500; color: #334155; line-height: 1.2;">Industrial Standards</span>
+
+        <div class="flex justify-between py-4 border-b border-slate-100">
+            <span class="text-slate-400">Primary Application</span>
+            <span class="text-slate-900 font-medium">Denim, Jackets, Leather Goods, Bags</span>
         </div>
 
     </div>
+
 </div>
+
+<!-- Performance Benefits -->
+<div class="mb-5">
+
+    <h3 class="text-xs font-bold tracking-[0.15em] text-slate-400 uppercase mb-5">
+        Performance Benefits
+    </h3>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Superior Durability
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Premium Metallic Finish
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                High Wear Resistance
+            </span>
+        </div>
+
+        <div style="background:#fff;padding:16px 20px;border-radius:16px;border:1px solid #f1f5f9;display:flex;align-items:center;gap:12px;">
+            <span style="width:8px;height:8px;background:#34d399;border-radius:50%;"></span>
+            <span style="font-size:14px;font-weight:500;color:#334155;">
+                Luxury Fashion Appearance
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
 
                 <!-- TOMBOL AKSI UTAMA (INTERAKTIF MAKSIMAL) -->
                 <div class="flex items-center gap-4 mb-16">
@@ -193,6 +216,34 @@ window.addEventListener("scroll", function() {
          style="position: relative; padding-bottom: 70px; display: block; width: 100%; min-height: 500px; box-sizing: border-box;">
         
         <div style="width: 100%; height: 300px; overflow: hidden; position: relative; display: block;">
+            <img src="{{ asset('image/nylon.jpeg') }}" 
+                 style="width: 100%; height: 100%; object-fit: cover; display: block;"
+                 class="group-hover:scale-105 transition duration-300">
+        </div>
+
+        <div class="p-6" style="display: block; width: 100%; box-sizing: border-box;">
+            <span class="text-xs uppercase tracking-widest text-emerald-500 font-semibold" style="display: block;">
+                Zippers
+            </span>
+            <h3 class="text-2xl font-bold mt-3" style="display: block; color: #0f172a;">
+                Nylon Zipper
+            </h3>
+            <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                Strong and flexible zipper made from high-quality nylon material.
+            </p>
+        </div>
+
+        <div style="position: absolute; bottom: 24px; left: 24px; right: 24px; display: block;">
+            <a href="/products/nylon-zipper" class="inline-block text-emerald-500 font-semibold hover:text-emerald-600 transition" style="text-decoration: none; display: inline-block;">
+                View Details →
+            </a>
+        </div>
+    </div>
+
+    <div class="group bg-white rounded-[30px] border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" 
+         style="position: relative; padding-bottom: 70px; display: block; width: 100%; min-height: 500px; box-sizing: border-box;">
+        
+        <div style="width: 100%; height: 300px; overflow: hidden; position: relative; display: block;">
             <img src="{{ asset('image/hero.png') }}" 
                  style="width: 100%; height: 100%; object-fit: cover; display: block;"
                  class="group-hover:scale-105 transition duration-300">
@@ -212,34 +263,6 @@ window.addEventListener("scroll", function() {
 
         <div style="position: absolute; bottom: 24px; left: 24px; right: 24px; display: block;">
             <a href="/products/resin-zipper" class="inline-block text-emerald-500 font-semibold hover:text-emerald-600 transition" style="text-decoration: none; display: inline-block;">
-                View Details →
-            </a>
-        </div>
-    </div>
-
-    <div class="group bg-white rounded-[30px] border border-gray-200 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" 
-         style="position: relative; padding-bottom: 70px; display: block; width: 100%; min-height: 500px; box-sizing: border-box;">
-        
-        <div style="width: 100%; height: 300px; overflow: hidden; position: relative; display: block;">
-            <img src="{{ asset('image/metal.jpeg') }}" 
-                 style="width: 100%; height: 100%; object-fit: cover; display: block;"
-                 class="group-hover:scale-105 transition duration-300">
-        </div>
-
-        <div class="p-6" style="display: block; width: 100%; box-sizing: border-box;">
-            <span class="text-xs uppercase tracking-widest text-emerald-500 font-semibold" style="display: block;">
-                Zippers
-            </span>
-            <h3 class="text-2xl font-bold mt-3" style="display: block; color: #0f172a;">
-                Metal Zipper
-            </h3>
-            <p style="color: #64748b; margin-top: 12px; line-height: 1.75; font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                Premium metal zipper for fashion, bags, jackets, and industrial products.
-            </p>
-        </div>
-
-        <div style="position: absolute; bottom: 24px; left: 24px; right: 24px; display: block;">
-            <a href="/products/metal-zipper" class="inline-block text-emerald-500 font-semibold hover:text-emerald-600 transition" style="text-decoration: none; display: inline-block;">
                 View Details →
             </a>
         </div>
