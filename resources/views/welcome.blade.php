@@ -7,7 +7,9 @@
     <title>ZPI Zipper</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -33,6 +35,7 @@ window.addEventListener("scroll", function() {
     }
 });
 </script>
+
 <body class="font-[Poppins] bg-slate-50">
 <nav id="navbar"
      class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
@@ -55,40 +58,76 @@ window.addEventListener("scroll", function() {
     </div>
 </nav>
 <section
-    class="h-[80vh] bg-cover bg-center flex items-start pt-30 relative"
-    style="background-image:url('{{ asset('image/hero.png') }}')">
-    <div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent">
-    </div>
-    <div class="relative w-full pl-18">
+    class="hero-bg relative h-[85vh] bg-cover bg-center flex items-center overflow-hidden"
+    style="background-image: url('{{ asset('image/hero.png') }}')">
 
-    <div class="max-w-md">
-        <h1 class="text-4xl font-bold leading-tight">
-            <span class="text-emerald-400">Resleting</span>
-            Berkualitas untuk Setiap Kebutuhan Industri
-        </h1>
-        <p class="mt-5 text-sm text-gray-600 leading-7">
-            Kami menyediakan berbagai jenis resleting berkualitas tinggi
-            untuk kebutuhan garmen, tas, alas kaki, dan berbagai aplikasi
-            industri dengan standar mutu terbaik.
-        </p>
-        <a href="#"
-            class="inline-block mt-8
-            bg-emerald-400
-            hover:bg-emerald-500
-            text-white
-            px-8 py-4
-            rounded-xl
-            font-semibold
-            shadow-lg
-            transition-colors
-            duration-300">
-             Lihat Katalog
-        </a>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-transparent"></div>
 
-    </div>
+    <!-- Content -->
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-8">
+
+        <div class="max-w-xl">
+
+            <!-- Judul -->
+            <h1 class="hero-title text-4xl font-bold leading-tight">
+                <span class="text-emerald-400">
+                    Resleting
+                </span>
+
+                Berkualitas untuk Setiap Kebutuhan Industri
+
+            </h1>
+
+            <!-- Deskripsi -->
+            <p class="hero-desc mt-5 text-sm text-gray-600 leading-7">
+
+                Kami menyediakan berbagai jenis resleting berkualitas tinggi
+                untuk kebutuhan garmen, tas, alas kaki, koper, serta berbagai
+                aplikasi industri dengan standar mutu terbaik.
+
+            </p>
+
+            <!-- Button -->
+           <div class="mt-10 hero-btn">
+
+    <a href="/products"
+        class="inline-flex items-center gap-3
+        bg-emerald-400
+        hover:bg-emerald-500
+        hover:scale-105
+        transition-all duration-300
+        text-white
+        px-8 py-4
+        rounded-xl
+        font-semibold
+        shadow-xl">
+
+        Lihat Katalog
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+
+            <path stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"/>
+        </svg>
+
+    </a>
 
 </div>
-<div class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-b from-transparent to-slate-50"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Fade bawah -->
+    <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-slate-50"></div>
+
 </section>
 <section class="relative -mt-5 z-20">
     <div class="max-w-7xl mx-auto px-8">
@@ -164,29 +203,58 @@ window.addEventListener("scroll", function() {
 <section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-8 text-center">
 
-        <span class="text-emerald-400 font-semibold uppercase tracking-widest">
+        <span
+            data-aos="fade-up"
+            class="text-emerald-400 font-semibold uppercase tracking-widest">
             Trusted By
         </span>
 
-        <h2 class="text-4xl font-bold mt-3">
+        <h2
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="text-4xl font-bold mt-3">
             Our Clients
         </h2>
 
-        <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
-            Kami dipercaya oleh berbagai perusahaan dan brand untuk memenuhi kebutuhan resleting berkualitas tinggi.
+        <p
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="text-gray-500 mt-4 max-w-2xl mx-auto">
+            Kami dipercaya oleh berbagai perusahaan dan brand untuk memenuhi
+            kebutuhan resleting berkualitas tinggi.
         </p>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 mt-14 items-center">
 
-            <img src="{{ asset('image/adidas.png') }}" class="h-16 mx-auto ">
+            <img
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                src="{{ asset('image/adidas.png') }}"
+                class="h-16 mx-auto hover:scale-110 transition duration-300">
 
-            <img src="{{ asset('image/nike.png') }}" class="h-16 mx-auto ">
+            <img
+                data-aos="zoom-in"
+                data-aos-delay="450"
+                src="{{ asset('image/nike.png') }}"
+                class="h-16 mx-auto hover:scale-110 transition duration-300">
 
-            <img src="{{ asset('image/eiger.png') }}" class="h-16 mx-auto ">
+            <img
+                data-aos="zoom-in"
+                data-aos-delay="600"
+                src="{{ asset('image/eiger.png') }}"
+                class="h-16 mx-auto hover:scale-110 transition duration-300">
 
-            <img src="{{ asset('image/converse.png') }}" class="h-16 mx-auto ">
+            <img
+                data-aos="zoom-in"
+                data-aos-delay="750"
+                src="{{ asset('image/converse.png') }}"
+                class="h-16 mx-auto hover:scale-110 transition duration-300">
 
-            <img src="{{ asset('image/uniqlo.png') }}" class="h-16 mx-auto ">
+            <img
+                data-aos="zoom-in"
+                data-aos-delay="900"
+                src="{{ asset('image/uniqlo.png') }}"
+                class="h-16 mx-auto hover:scale-110 transition duration-300">
 
         </div>
 
@@ -277,6 +345,15 @@ window.addEventListener("scroll", function() {
     </div>
 
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 900,
+    easing: 'ease-out',
+    once: true,
+});
+</script>
 </body>
 
 </html>

@@ -86,27 +86,104 @@ window.addEventListener("scroll", function() {
 
         <div class="flex justify-center gap-4 flex-wrap mb-14">
 
-   <button onclick="filterProducts('all', this)"
-        class="filter-btn active px-6 py-2 rounded-full border">
-    ALL
-</button>
+ <div class="flex justify-center gap-4 flex-wrap">
 
-<button onclick="filterProducts('zippers', this)"
-        class="filter-btn px-6 py-2 rounded-full border">
-    ZIPPERS
-</button>
+    <button onclick="filterProducts('all', this)"
+        class="filter-btn active
+        px-7 py-2.5
+        rounded-full
+        border border-gray-300
+        bg-white
+        text-gray-700
+        font-medium
+        shadow-sm
+        hover:bg-emerald-400
+        hover:text-white
+        hover:border-emerald-400
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all duration-300 ease-in-out
+        cursor-pointer">
+        ALL
+    </button>
 
-    <button onclick="filterProducts('sliders', this)" class="filter-btn px-6 py-2 rounded-full border">
-    SLIDERS
-</button>
+    <button onclick="filterProducts('zippers', this)"
+        class="filter-btn
+        px-7 py-2.5
+        rounded-full
+        border border-gray-300
+        bg-white
+        text-gray-700
+        font-medium
+        shadow-sm
+        hover:bg-emerald-400
+        hover:text-white
+        hover:border-emerald-400
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all duration-300 ease-in-out
+        cursor-pointer">
+        ZIPPERS
+    </button>
 
-    <button onclick="filterProducts('magic-tape', this)" class="filter-btn px-6 py-2 rounded-full border">
-    MAGIC TAPE
-</button>
-    <button onclick="filterProducts('others', this)" class="filter-btn px-6 py-2 rounded-full border">
-    OTHERS
-</button>
+    <button onclick="filterProducts('sliders', this)"
+        class="filter-btn
+        px-7 py-2.5
+        rounded-full
+        border border-gray-300
+        bg-white
+        text-gray-700
+        font-medium
+        shadow-sm
+        hover:bg-emerald-400
+        hover:text-white
+        hover:border-emerald-400
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all duration-300 ease-in-out
+        cursor-pointer">
+        SLIDERS
+    </button>
 
+    <button onclick="filterProducts('magic-tape', this)"
+        class="filter-btn
+        px-7 py-2.5
+        rounded-full
+        border border-gray-300
+        bg-white
+        text-gray-700
+        font-medium
+        shadow-sm
+        hover:bg-emerald-400
+        hover:text-white
+        hover:border-emerald-400
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all duration-300 ease-in-out
+        cursor-pointer">
+        MAGIC TAPE
+    </button>
+
+    <button onclick="filterProducts('others', this)"
+        class="filter-btn
+        px-7 py-2.5
+        rounded-full
+        border border-gray-300
+        bg-white
+        text-gray-700
+        font-medium
+        shadow-sm
+        hover:bg-emerald-400
+        hover:text-white
+        hover:border-emerald-400
+        hover:-translate-y-1
+        hover:shadow-lg
+        transition-all duration-300 ease-in-out
+        cursor-pointer">
+        OTHERS
+    </button>
+
+</div>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 32px; margin-top: 32px; width: 100%;">

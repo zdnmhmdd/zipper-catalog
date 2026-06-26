@@ -7,7 +7,9 @@
     <title>ZPI Zipper</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -60,7 +62,9 @@ window.addEventListener("scroll", function() {
             <div class="grid md:grid-cols-2 gap-12 items-center">
 
                 <div>
-                    <h1 class="text-5xl font-bold leading-tight">
+                    <h1 
+                     data-aos="fade-right"
+                     class="text-5xl font-bold leading-tight">
                         Mitra Terpercaya dalam
                         <span class="text-emerald-400">
                             Solusi Resleting
@@ -68,14 +72,19 @@ window.addEventListener("scroll", function() {
                         Berkualitas
                     </h1>
 
-                    <p class="mt-6 text-gray-600 leading-8">
+                    <p 
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                    class="mt-6 text-gray-600 leading-8">
                         Kami menyediakan berbagai jenis resleting berkualitas tinggi untuk kebutuhan
                         garment, tas, alas kaki, dan berbagai sektor industri lainnya dengan standar
                         kualitas terbaik.
                     </p>
                 </div>
 
-                <div>
+                <div 
+                    data-aos="fade-left"
+                    data-aos-delay="300">
                     <img src="{{ asset('image/gedung.png') }}"
                         class="rounded-2xl shadow-x2">
                 </div>
@@ -146,56 +155,224 @@ window.addEventListener("scroll", function() {
     </section>
 
 
-    <!-- Stats -->
-    <section class="py-10 bg-emerald-400 text-white">
+<section class="py-20 text-white
+bg-gradient-to-br
+from-[#0e9f84]
+via-[#12b894]
+to-[#1fd0c4]">
 
-        <div class="max-w-6xl mx-auto px-8">
+    <div class="max-w-6xl mx-auto px-8">
 
-            <div class="grid md:grid-cols-4 gap-8 text-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-                <div>
-                    <h3 class="text-5xl font-bold">2016</h3>
-                    <p class="mt-2">Tahun Berdiri</p>
+            <!-- Tahun Berdiri -->
+            <div class="relative group pt-10 overflow-visible"
+                data-aos="fade-up">
+
+                <!-- Icon -->
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2
+                           z-20
+                           w-20 h-20 rounded-full
+                           bg-emerald-400
+                           border-4 border-emerald-300
+                           shadow-[0_0_25px_rgba(255,255,255,0.25)]
+                           flex items-center justify-center
+                           transition-all duration-300
+                           group-hover:scale-110">
+
+                    <i class="fa-solid fa-calendar-days text-3xl text-white"></i>
+
                 </div>
 
-                <div>
-                    <h3 class="text-5xl font-bold">100+</h3>
-                    <p class="mt-2">Client</p>
+                <!-- Card -->
+                <div
+                    class="relative z-10
+                           bg-white/10 backdrop-blur-sm
+                           rounded-[32px]
+                           pt-16 pb-10 px-6
+                           text-center
+                           transition-all duration-300
+                           hover:-translate-y-3
+                           hover:bg-white/20">
+
+                    <h3 class="text-5xl font-bold">
+                        2016
+                    </h3>
+
+                    <div class="w-14 h-1 bg-white/70 rounded-full mx-auto my-4"></div>
+
+                    <p class="text-lg">
+                        Tahun Berdiri
+                    </p>
+
                 </div>
 
-                <div>
-                    <h3 class="text-5xl font-bold">99%</h3>
-                    <p class="mt-2">Ulasan Bintang 5</p>
+            </div>
+
+            <!-- Client -->
+            <div class="relative group pt-10 overflow-visible"
+                data-aos="fade-up"
+                data-aos-delay="150">
+
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2
+                           z-20
+                           w-20 h-20 rounded-full
+                           bg-emerald-400
+                           border-4 border-emerald-300
+                           shadow-[0_0_25px_rgba(255,255,255,0.25)]
+                           flex items-center justify-center
+                           transition-all duration-300
+                           group-hover:scale-110">
+
+                    <i class="fa-solid fa-users text-3xl text-white"></i>
+
                 </div>
 
-                <div>
-                    <h3 class="text-5xl font-bold">100+</h3>
-                    <p class="mt-2">Proyek Selesai</p>
+                <div
+                    class="relative z-10
+                           bg-white/10 backdrop-blur-sm
+                           rounded-[32px]
+                           pt-16 pb-10 px-6
+                           text-center
+                           transition-all duration-300
+                           hover:-translate-y-3
+                           hover:bg-white/20">
+
+                    <h3 class="text-5xl font-bold">
+                        <span class="counter" data-target="100">0</span>+
+                    </h3>
+
+                    <div class="w-14 h-1 bg-white/70 rounded-full mx-auto my-4"></div>
+
+                    <p class="text-lg">
+                        Client
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Rating -->
+            <div class="relative group pt-10 overflow-visible"
+                data-aos="zoom-in"
+                data-aos-delay="300">
+
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2
+                           z-20
+                           w-20 h-20 rounded-full
+                           bg-emerald-400
+                           border-4 border-emerald-300
+                           shadow-[0_0_25px_rgba(255,255,255,0.25)]
+                           flex items-center justify-center
+                           transition-all duration-300
+                           group-hover:scale-110">
+
+                    <i class="fa-solid fa-star text-3xl text-white"></i>
+
+                </div>
+
+                <div
+                    class="relative z-10
+                           bg-white/10 backdrop-blur-sm
+                           rounded-[32px]
+                           pt-16 pb-10 px-6
+                           text-center
+                           transition-all duration-300
+                           hover:-translate-y-3
+                           hover:bg-white/20">
+
+                    <h3 class="text-5xl font-bold">
+                        <span class="counter" data-target="99">0</span>%
+                    </h3>
+
+                    <div class="w-14 h-1 bg-white/70 rounded-full mx-auto my-4"></div>
+
+                    <p class="text-lg">
+                        Ulasan Bintang 5
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Project -->
+            <div class="relative group pt-10 overflow-visible"
+                data-aos="fade-up"
+                data-aos-delay="450">
+
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2
+                           z-20
+                           w-20 h-20 rounded-full
+                           bg-emerald-400
+                           border-4 border-emerald-300
+                           shadow-[0_0_25px_rgba(255,255,255,0.25)]
+                           flex items-center justify-center
+                           transition-all duration-300
+                           group-hover:scale-110">
+
+                    <i class="fa-solid fa-circle-check text-3xl text-white"></i>
+
+                </div>
+
+                <div
+                    class="relative z-10
+                           bg-white/10 backdrop-blur-sm
+                           rounded-[32px]
+                           pt-16 pb-10 px-6
+                           text-center
+                           transition-all duration-300
+                           hover:-translate-y-3
+                           hover:bg-white/20">
+
+                    <h3 class="text-5xl font-bold">
+                        <span class="counter" data-target="100">0</span>+
+                    </h3>
+
+                    <div class="w-14 h-1 bg-white/70 rounded-full mx-auto my-4"></div>
+
+                    <p class="text-lg">
+                        Proyek Selesai
+                    </p>
+
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
     <!-- Carouse Foto -->
 <section class="py-10 bg-white">
     <div class="max-w-7xl mx-auto px-8">
 
         <!-- Heading -->
-        <div class="text-center">
-            <h2 class="text-4xl font-bold">
-                Galeri Perusahaan
-            </h2>
+  <div
+    class="text-center"
+    data-aos="fade-up">
 
-            <p class="text-gray-500 mt-3">
-                Dokumentasi aktivitas dan fasilitas produksi kami.
-            </p>
-        </div>
+    <h2 class="text-4xl font-bold">
+        Galeri Perusahaan
+    </h2>
 
+    <p
+        class="text-gray-500 mt-3"
+        data-aos="fade-up"
+        data-aos-delay="200">
+        Dokumentasi aktivitas dan fasilitas produksi kami.
+    </p>
+
+</div>
         <!-- Carousel -->
-        <div class="relative mt-5">
+  <div
+    class="relative mt-10"
+    data-aos="zoom-in-up"
+    data-aos-duration="900">
 
             <!-- Fade Kiri -->
             <div
@@ -371,6 +548,69 @@ window.addEventListener("scroll", function() {
     });
 </script>
 
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 900,
+        easing: "ease-out",
+        once: true,
+    });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const counters = document.querySelectorAll(".counter");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            const counter = entry.target;
+            const target = parseInt(counter.dataset.target);
+
+            let current = 0;
+
+            const updateCounter = () => {
+
+                const increment = Math.ceil(target / 150);
+
+                if (current < target) {
+                    current += increment;
+
+                    if (current > target) current = target;
+
+                    counter.innerText = current;
+
+                    requestAnimationFrame(updateCounter);
+
+                } else {
+
+                    counter.innerText = target;
+
+                }
+
+            };
+
+            updateCounter();
+
+            observer.unobserve(counter);
+
+        });
+
+    }, {
+        threshold: 0.5
+    });
+
+    counters.forEach(counter => observer.observe(counter));
+
+});
+</script>
 </body>
 
 </html>
